@@ -71,7 +71,7 @@
 </div>
 <div class="contact-section">
     <h2>Contact Us</h2>
-    <form onsubmit="return sendMail(this);" >
+    <form onsubmit="return sendMail(this);" id="myForm">
     <div class="form-group">
         <label for="inputName">Full Name</label>
         <textarea class="form-control" id="inputName" rows="1" placeholder="Full Name" required></textarea>
@@ -89,7 +89,7 @@
         <textarea class="form-control" id="projectSummary" rows="3" placeholder="Number of bedrooms, location, budget"></textarea>
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>    
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" id = "submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
  <!-- Thank you Modal -->
