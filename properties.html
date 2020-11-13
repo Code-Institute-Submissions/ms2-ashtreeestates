@@ -49,67 +49,73 @@
         </div>
     </div>           
 </nav>
-<div class="hero-section">
-    <h1>We have a great selection of properties in <span id="property-locations"></span></h1>
-</div>
-<div class="info-section">
+<div class="option-section container-fluid">
+    <h1>Select a property below:</h1>
     <div class="row">
-        <div class="col-xl-6 mx-auto">
-            <h2>Welcome to Ash Tree Estates</h2>
-            <ul>
-                <li>Hand-picked exclusive properties</li>
-                <li>24 years experience of Student Property Management </li>
-                <li>Professional, rapid and personal service</li>
-                <li>Loyal and experienced maintenance team</li>
-                <li>Member of the Property Redress Scheme, Client Money Protection Scheme and the Residential Landlords Association.</li>
-            </ul>
-            <a href="properties.html"><button>View Properties</button></a>
+        <div class="col-4"></div>
+        <div class="col-4 list-map-btns">
+            <button id="list-view-btn">List View</button>
+            <button id="map-view-btn">Map View</button>
         </div>
-        <div class="col-xl-6 mx-auto">
-            <img src="assets/images/hotwells.jpg" alt="Hotwells, Bristol">
+        <div class="col-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 room-btns">
+            <button id="2-bed-btn">2 beds</button>
+            <button id="3-bed-btn">3 beds</button>
+            <button id="4-bed-btn">4 beds</button>
+            <button id="5-bed-btn">5 beds</button>
+            <button id="6-bed-btn">6 beds</button>
+            <button id="7-bed-btn">7 beds</button>
         </div>
+        <div class="col-2"></div>
     </div>
 </div>
-<div class="contact-section">
-    <h2>Contact Us</h2>
-    <form onsubmit="return sendMail(this);" id="myForm">
-    <div class="form-group">
-        <label for="inputName">Full Name</label>
-        <textarea class="form-control" id="inputName" rows="1" placeholder="Full Name" required></textarea>
-    </div>
-    <div class="form-group">
-        <label for="inputEmail">Email Address</label>
-        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email Address" required>        
-    </div>
-    <div class="form-group">
-        <label for="inputPhone">Phone Number</label>
-        <input type="number" class="form-control" id="inputPhone" aria-describedby="emailHelp" placeholder="Phone Number" required>        
-    </div>    
-    <div class="form-group">
-        <label for="projectSummary">How can we help?</label>
-        <textarea class="form-control" id="projectSummary" rows="3" placeholder="Number of bedrooms, location, budget"></textarea>
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>    
-    <button type="submit" id ="submit" class="btn btn-primary">Submit</button>
-    </form>
-</div>
- <!-- Thank you Modal -->
-<div class="modal fade" tabindex="-1" role="dialog" id="emailModal">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title text-center modal-head">Thank you</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<div class="list-view container-fluid">
+    <div class="2-bed-props prop-row">
+        <div class="st-georges row">
+            <div class="col-md-6">
+                <h2>St George's Road, Hotwells</h2>
+                <p><i class="fas fa-bed"></i> 2  &emsp;<i class="fas fa-bath"></i>1 &emsp; <i class="fas fa-pound-sign"></i>TBC </p>
+                <ul>
+                    <li>5 minutes walk from Bristol University down Jacobswells Road</li>
+                    <li>2 very large study rooms (each room on a separate floor) with double beds and sofas</li>
+                    <li>Fully equipped kitchen including washing machine and tumble dryer</li>
+                    <li>Shower room</li>
+                    <li>Electric heating</li>
+                    <li>Secondary Glazing</li>                   
+                </ul>                
             </div>
-            <div class="modal-body text-center modal-content">
-                <p>Many thanks for your enquiry, I'll be in touch soon!</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            <div class="col-md-6 list-pic">
+                <img src="assets/images/st-george/bedroom1.jpg" alt="Bedroom at St George's Road"  width="100%">
             </div>
         </div>
     </div>
+    <div class="3-bed-props prop-row">
+        <div class="richmond-hill row">
+            <div class="col-md-6">
+                <h2>Richmond Hill Avenue, Clifton</h2>
+                <p><i class="fas fa-bed"></i> 3  &emsp;<i class="fas fa-bath"></i>1 &emsp; <i class="fas fa-pound-sign"></i>TBC </p>
+                <ul>
+                    <li>3 bedroom flat behind the Students' Union Building</li>
+                    <li>Off Street Parking</li>
+                    <li>3 Good Size Double Bedrooms </li>
+                    <li>Separate fully equipped large kitchen/ lounge/ diner</li>
+                    <li>Bathroom with shower over bath</li>
+                    <li>Gas central heating</li>                   
+                </ul>                
+            </div>
+            <div class="col-md-6 list-pic">
+                <img src="assets/images/richmond-hill/kitchen.jpg" alt="Bedroom at St George's Road"  width="100%">
+            </div>
+        </div>
+    </div>
+
+
 </div>
+
+
 <footer>
     <div class="row">
         <div class="col-sm-4">
@@ -123,14 +129,11 @@
         </div>        
     </div>
 </footer>
-
-
-    
 <body>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>    
+    <script type="text/javascript" src="assets/js/properties.js"></script>    
 </body>
 </html>
