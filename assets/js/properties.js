@@ -18,11 +18,19 @@ $(document).ready(function () {
     $("#2-bed-btn").on('click', function(){
     $(".2-bed-props").removeClass("hidden");
     $(".3-bed-props").addClass("hidden")
+    $(".4-bed-props").addClass("hidden")
     });
 
     $("#3-bed-btn").on('click', function(){
     $(".3-bed-props").removeClass("hidden");
-    $(".2-bed-props").addClass("hidden")
+    $(".2-bed-props").addClass("hidden");
+    $(".4-bed-props").addClass("hidden")
+    });
+
+     $("#4-bed-btn").on('click', function(){
+    $(".4-bed-props").removeClass("hidden");
+    $(".2-bed-props").addClass("hidden");
+    $(".3-bed-props").addClass("hidden")
     });
 
 
