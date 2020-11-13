@@ -161,3 +161,9 @@ footer, footer a{
 .hidden{
     display: none
 }
+
+#map-view{
+    width: 80%;
+    height: 600px;
+    margin-left: 150px
+}

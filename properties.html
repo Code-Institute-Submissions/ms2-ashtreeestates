@@ -11,14 +11,12 @@
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">    
     <title>Ash Tree Estates</title>
     <link rel="icon" href="assets/images/logo.png" type="image/jpg">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-</script>
-<script type="text/javascript"> (function(){
-      emailjs.init("user_scvEXqvGskRGGpE58Sfoi");   })();</script>      
+
+      
 </head>
 <header>
-    <h1><img src="assets/images/logo.png" alt="logo">
-    ASH TREE ESTATES</h1>    
+    <a href="index.html"><h1><img src="assets/images/logo.png" alt="logo">
+    ASH TREE ESTATES</h1></a>    
 </header>
 <nav class="row navbar navbar-expand-lg navbar-dark bg-blue" >            
     <div class="nav-options">
@@ -49,6 +47,7 @@
         </div>
     </div>           
 </nav>
+<body>
 <div class="option-section container-fluid">
     <h1>Select a property below:</h1>
     <div class="row">
@@ -230,7 +229,7 @@
                     <li>Separate sitting room</li>
                     <li>Large bathroom with shower over bath</li>
                     <li>Utility cupboard with washing machine and tumble drier</li>  
-                    <li>Small courtyard garden
+                    <li>Small courtyard garden</li>
                     <li>Gas Central Heating</li>        
                 </ul>                
             </div>
@@ -278,10 +277,30 @@
             </div>
         </div>              
     </div>
+    <div class="7-bed-props ">
+        <div class="pipe prop-row row">
+            <div class="col-md-6">
+                <h2>Pipe Lane, City Centre</h2>
+                <p><i class="fas fa-bed"></i> 7  &emsp;<i class="fas fa-bath"></i>3 &emsp; <i class="fas fa-pound-sign"></i>TBC </p>
+                <ul>
+                    <li>7 good size double bedrooms, some very large</li>
+                    <li>Fully equipped kitchen/diner including dishwasher and washer/drier</li>
+                    <li>Separate lounge</li>
+                    <li>2 Shower rooms and one en-suite</li>                    
+                    <li>Gas central heating</li> 
+                    <li>Walled sunny courtyard</li>
+                    <li>Holds an HMO Licence and is accredited under the West of England Accreditation Scheme</li>            
+                </ul>                
+            </div>
+            <div class="col-md-6 list-pic">
+                <img src="assets/images/pipe/bedroom5.jpg" alt="Bedroom at Pipe Line">
+            </div>
+        </div>              
+    </div>
 </div>
-<div class="map-view container-fluid">
-    <h1>Map</h1>
-</div>
+
+<!--The div element for the map -->
+<div id="map-view"></div>
 
 
 <footer>
@@ -297,11 +316,19 @@
         </div>        
     </div>
 </footer>
-<body>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/map.js"></script>
+    <script type="text/javascript" src="assets/js/properties.js"></script>
+    
+    <script src="https://unpkg.com/@google/markerclustererplus@5.1.0/dist/markerclustererplus.min.js"></script>
+    
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/properties.js"></script>    
+           <script
+      src=
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyBXfj6XrQ4zsUPJQ0sS3kBdWUr4Iml1jak&callback=initMap&libraries=places"
+      defer
+    ></script>
 </body>
 </html>
