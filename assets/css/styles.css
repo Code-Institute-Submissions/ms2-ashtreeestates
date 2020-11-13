@@ -128,11 +128,12 @@ footer, footer a{
     color: white;
 }
 
-.active {
-  background-color: #F00;
+.selected {
+  background-color: black;
+  color: white
 }
 
-.st-georges{
+.st-georges, .richmond-hill, .smhl, .berkeley, .dowry{
     background-color: lightgray
 }
 
@@ -148,9 +149,6 @@ footer, footer a{
     list-style-type: none;
 }
 
-.richmond-hill{
-    background-color: white
-}
 
 .list-pic img{
     padding-top: 10px;
