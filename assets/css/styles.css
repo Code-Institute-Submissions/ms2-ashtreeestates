@@ -133,7 +133,7 @@ footer, footer a{
   color: white
 }
 
-.st-georges, .richmond-hill, .smhl, .berkeley, .dowry, .high{
+.st-georges, .richmond-hill, .smhl, .rosebury, .smhu, .pipe{
     background-color: lightgray
 }
 
@@ -142,7 +142,7 @@ footer, footer a{
 }
 
 .prop-row{
-    height: 30vh;    
+    height: 35vh;    
 }
 
 .prop-row li{
@@ -155,7 +155,7 @@ footer, footer a{
     object-fit: cover;
     padding-bottom: 10px;
     height: 30vh;
-    width: 50vh;
+    width: 45vh;
 }
 
 .hidden{
@@ -163,7 +163,7 @@ footer, footer a{
 }
 
 #map-view{
-    width: 80%;
-    height: 600px;
-    margin-left: 150px
+    width: 700px;
+    height: 850px;
+    margin-left: 50px;
 }

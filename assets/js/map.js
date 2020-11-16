@@ -7,14 +7,16 @@ let twoBeds = [{
             lat: 51.4510,
             lng: -2.6073
         }, // St George's
-        content: `<h4 class="info-head">St George's Road</h4>`
+        content: `<h4 class="info-head">St George's Road</h4>
+        <p><i class="fas fa-bed"></i> 2 &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 525 each pcm </p>`
     },
     {
         coords: {
             lat: 51.4642,
             lng: -2.6062
         }, // Abbotsford Road
-        content: `<h4 class="info-head">Abbotsford Road</h4>`
+        content: `<h4 class="info-head">Abbotsford Road</h4>
+        <p><i class="fas fa-bed"></i> 2  &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 606 each pcm </p>`
     },    
 ];
 
@@ -23,30 +25,25 @@ let threeBeds = [{
             lat: 51.4568,
             lng: -2.6121
         }, // Richmond Hill
-        content: `<h4 class="info-head">Richmond Hill</h4>`
+        content: `<h4 class="info-head">Richmond Hill</h4>
+        <p><i class="fas fa-bed"></i> 3  &emsp;<i class="fas fa-bath"></i>1 &emsp; <i class="fas fa-pound-sign"></i> 570 each pcm </p>`
     },
     {
         coords: {
             lat: 51.4665,
             lng: -2.6098
         }, // Ashgrove Road
-        content: `<h4 class="info-head">Ashgrove Road</h4>`
+        content: `<h4 class="info-head">Ashgrove Road</h4>
+        <p><i class="fas fa-bed"></i> 3  &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 565 each pcm </p>`
     },
     {
         coords: {
             lat: 51.460,
             lng: -2.6016
         }, // St Michael's Hill Lower
-        content: `<h4 class="info-head">St Michael's Hill Lower</h4>`
-    },
-    {
-        coords: {
-            lat: 51.4659,
-            lng: -2.5935
-        }, // Sydenham Hill
-        content: `<h4 class="info-head">Sydenham Hill</h4>`
-    },
-    
+        content: `<h4 class="info-head">St Michael's Hill Lower</h4>
+        <p><i class="fas fa-bed"></i> 3  &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 580 each pcm </p>`
+    },       
 ];
 
 let fourBeds = [{
@@ -54,21 +51,24 @@ let fourBeds = [{
             lat: 51.4769,
             lng: -2.5974
         }, // Berkeley Avenue
-        content: `<h4 class="info-head">Berkeley Avenue</h4>`
+        content: `<h4 class="info-head">Berkeley Avenue</h4>
+        <p><i class="fas fa-bed"></i> 4  &emsp;<i class="fas fa-bath"></i> 2 &emsp; <i class="fas fa-pound-sign"></i> 525 each pcm </p>`
     },
     {
         coords: {
             lat: 51.4537,
             lng: -2.6082
         }, // Rosebury Terrace
-        content: `<h4 class="info-head">Rosebury Terrace</h4>`
+        content: `<h4 class="info-head">Rosebury Terrace</h4>
+         <p><i class="fas fa-bed"></i> 4  &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 570 each pcm </p>`
     },
     {
         coords: {
             lat: 51.4517,
             lng: -2.6202
         }, // Dowry Road
-        content: `<h4 class="info-head">Dowry Road/h4>`
+        content: `<h4 class="info-head">Dowry Road</h4>
+        <p><i class="fas fa-bed"></i> 4  &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 555 each pcm </p>`
     },
 ];
 
@@ -77,7 +77,8 @@ let fiveBeds = [{
             lat: 51.4603,
             lng: -2.6016
         }, // St Michael's Hill Upper
-        content: `<h4 class="info-head">St Michael's Hill Upper</h4>`
+        content: `<h4 class="info-head">St Michael's Hill Upper</h4>
+        <p><i class="fas fa-bed"></i> 5  &emsp;<i class="fas fa-bath"></i> 2 &emsp; <i class="fas fa-pound-sign"></i> 560 each pcm </p>`
     },
     
 ];
@@ -87,7 +88,8 @@ let sixBeds = [{
             lat: 51.4546,
             lng: -2.5927
         }, // High Street
-        content: `<h4 class="info-head">High Street</h4>`
+        content: `<h4 class="info-head">High Street</h4>
+        <p><i class="fas fa-bed"></i> 6  &emsp;<i class="fas fa-bath"></i> 2 &emsp; <i class="fas fa-pound-sign"></i> 545 each pcm </p>`
     },
 ];    
 
@@ -96,7 +98,8 @@ let sevenBeds = [{
             lat: 51.4545,
             lng: -2.5989
         }, // Pipe Lane
-        content: `<h4 class="info-head">Pipe Lane</h4></h4>`
+        content: `<h4 class="info-head">Pipe Lane</h4></h4>
+        <p><i class="fas fa-bed"></i> 7  &emsp;<i class="fas fa-bath"></i> 3 &emsp; <i class="fas fa-pound-sign"></i> 555 each pcm </p>`
     },           
 ];
 
@@ -162,7 +165,7 @@ function initMap(selectedLocations) {
     }
 }
 
-// Event listeners for button options to drop markers and call functions to display top 3
+// Event listeners for button options to drop markers 
 
 document.getElementById("2-bed-btn").addEventListener("click", () => {
     initMap(twoBeds);
