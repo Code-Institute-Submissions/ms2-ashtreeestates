@@ -1,23 +1,22 @@
 //text changer on homepage
 
-var properties = ["Clifton","Redland"," the City Centre","Cotham","Clifton","Hotwells"];
-        var currentProperty= 0;
-        var property = document.getElementById('property-locations')
-        function ChangeText()
-        {
-            document.getElementById('property-locations').innerHTML = properties[currentProperty];          
+var properties = ["Clifton","Redland"," the City Centre","Cotham","Hotwells"];
+var currentProperty= 0;
+var property = document.getElementById('property-locations')
+function ChangeText(){
+    document.getElementById('property-locations').innerHTML = properties[currentProperty];          
             
-            if(currentProperty < properties.length -1)
+        if(currentProperty < properties.length -1)
             {        
                 currentProperty++;
             }
-            else
+        else
             {
                 currentProperty = 0;
             }
             setTimeout("ChangeText();",2000);
-        }        
-        ChangeText();
+    }        
+ChangeText();
 
 //send email with emailJS
 
