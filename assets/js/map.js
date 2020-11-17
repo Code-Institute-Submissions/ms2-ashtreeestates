@@ -6,7 +6,7 @@ let twoBeds = [{
         coords: {
             lat: 51.4510,
             lng: -2.6073
-        }, // St George's
+        }, // St George's Road
         content: `<h4 class="info-head">St George's Road</h4>
         <p><i class="fas fa-bed"></i> 2 &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 525 each pcm </p>`
     },
@@ -26,7 +26,7 @@ let threeBeds = [{
             lng: -2.6121
         }, // Richmond Hill
         content: `<h4 class="info-head">Richmond Hill</h4>
-        <p><i class="fas fa-bed"></i> 3  &emsp;<i class="fas fa-bath"></i>1 &emsp; <i class="fas fa-pound-sign"></i> 570 each pcm </p>`
+        <p><i class="fas fa-bed"></i> 3  &emsp;<i class="fas fa-bath"></i>1 &emsp; <i class="fas fa-pound-sign"></i> 570 each pcm </p>`,        
     },
     {
         coords: {
@@ -96,7 +96,8 @@ let sixBeds = [{
 let sevenBeds = [{
         coords: {
             lat: 51.4545,
-            lng: -2.5989
+            lng: -2.5989,
+            "id": "pipe-lane"
         }, // Pipe Lane
         content: `<h4 class="info-head">Pipe Lane</h4></h4>
         <p><i class="fas fa-bed"></i> 7  &emsp;<i class="fas fa-bath"></i> 3 &emsp; <i class="fas fa-pound-sign"></i> 555 each pcm </p>`
@@ -110,11 +111,13 @@ function initMap(selectedLocations) {
         lat: 51.4545,
         lng: -2.5879
     };
+    
     map = new google.maps.Map(document.getElementById("map-view"), {
         zoom: 14,
         center: myLatlng,
         disableDefaultUI: true,
     });
+
 
     // Change zoom level on smaller screen sizes
 
@@ -124,7 +127,7 @@ function initMap(selectedLocations) {
             lng: -4.9904922
         };
 
-        map = new google.maps.Map(document.getElementById("map"), {
+        map = new google.maps.Map(document.getElementById("map-view"), {
             zoom: 8,
             center: myLatlng,
             disableDefaultUI: true,
@@ -167,6 +170,8 @@ function initMap(selectedLocations) {
 
 // Event listeners for button options to drop markers 
 
+
+
 document.getElementById("2-bed-btn").addEventListener("click", () => {
     initMap(twoBeds);
     
@@ -191,3 +196,4 @@ document.getElementById("7-bed-btn").addEventListener("click", () => {
     initMap(sevenBeds);
     
 });
+
