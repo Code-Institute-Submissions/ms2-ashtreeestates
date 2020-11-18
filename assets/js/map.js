@@ -113,7 +113,7 @@ function initMap(selectedLocations) {
     };
     
     map = new google.maps.Map(document.getElementById("map-view"), {
-        zoom: 14,
+        zoom: 13,
         center: myLatlng,
         disableDefaultUI: true,
     });
@@ -134,7 +134,7 @@ function initMap(selectedLocations) {
         });
     }
 
-    let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 
     // Iterate through the array of locations and place the markers on the map
 
@@ -168,8 +168,8 @@ function initMap(selectedLocations) {
     }
 }
 
-// Event listeners for button options to drop markers 
 
+// Event listeners for button options to drop markers 
 
 
 document.getElementById("2-bed-btn").addEventListener("click", () => {
