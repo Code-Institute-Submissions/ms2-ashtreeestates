@@ -41,6 +41,8 @@ function initMap() {
       location: position,
       rankBy: google.maps.places.RankBy.DISTANCE,
       keyword: placetype,
+      
+
           };
 
           
@@ -60,7 +62,8 @@ function initMap() {
     let marker = new google.maps.Marker({
         position: place.geometry.location,
         map: map,
-        title: place.name
+        title: place.name,
+        icon: {                               url: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png"                           }
     });
 
     /* TODO: Step 4B: Add click listeners to the markers */
