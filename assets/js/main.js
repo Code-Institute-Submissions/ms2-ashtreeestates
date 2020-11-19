@@ -18,6 +18,25 @@ function ChangeText(){
     }        
 ChangeText();
 
+//see more section hidden when page loads
+$(document).ready(function () {
+$("#see-more").addClass("hidden");
+});
+
+//button to see more properties
+
+$("#see-more-btn").click(function(){
+    $("#see-more").fadeIn();
+    $("#see-more-btn").addClass("hidden")
+});
+
+$("#see-less-btn").click(function(){
+    $("#see-more").fadeOut();
+    $("#see-more-btn").removeClass("hidden")
+});
+
+
+
 //send email with emailJS
 
 function sendMail(contactForm){
@@ -44,3 +63,5 @@ $('#myForm').on('submit', function (email) {
     $('#emailModal').modal('show');
     email.preventDefault();
 });
+
+
