@@ -1,3 +1,5 @@
+/*GENERAL***********/
+
 html,
 body {
 	font-family: 'Oswald', sans-serif;
@@ -14,19 +16,6 @@ header{
     position: relative;    
     display: inline-block;    
 }
-
-#homepage-header{
-    animation-name: example;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-}
-
-@keyframes example {
-  0%   {height: 100vh; width: 100%; padding: 30vh 0}    
-  100% {height: 25vh; width: 100%;}
-}
-
-
 
 header h1{
     color: white;
@@ -49,6 +38,47 @@ header img{
 .nav-item{
     padding-right: 15%
 }
+
+.btn{    
+    height: 50px;
+    width: 150px;
+    background-color: #2b580c;
+    color: white;
+    margin-bottom: 15px
+}
+
+.hidden{
+    display: none
+}
+
+footer, footer a{
+    background-color: #2b580c;  
+    color: white;
+    padding: 15px 0
+}
+
+footer a{
+    color: white
+}
+
+.selected {
+  background-color: #7ea04d;;
+  color: white
+}
+
+/*HOME PAGE***********/
+
+#homepage-header{
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes example {
+  0%   {height: 100vh; width: 100%; padding: 30vh 0}    
+  100% {height: 25vh; width: 100%;}}
+
+/*HERO SECTION HOME***********/
 
 .hero-section{
     text-align: center;
@@ -91,13 +121,9 @@ header img{
     margin-bottom: 5px;
 }
 
-.btn{    
-    height: 50px;
-    width: 150px;
-    background-color: #2b580c;
-    color: white;
-    margin-bottom: 15px
-}
+
+
+/*PROPERTY LISTING SECTION HOME***********/
 
 .property-card-section{
     background-color: #7ea04d;
@@ -129,6 +155,8 @@ header img{
 	color: #F5F5DC;
 }
 
+/*CONTACT FORM HOME ***********/
+
 .contact-section h2{
     padding-top: 25px;
     padding-bottom: 25px;
@@ -143,24 +171,32 @@ header img{
     padding-bottom: 25px;
 }
 
-footer, footer a{
-    background-color: #2b580c;  
-    color: white;
-    padding: 15px 0
-}
 
-footer a{
-    color: white
-}
+/*PROPERTY LANDING PAGE **************************/
 
-.selected {
-  background-color: black;
-  color: white
+.option-section{
+    background-color: #eefcd3;
 }
 
 #list-view{
-    background-color: #eefcd3;
+    background-color: #7ea04d;;
     
+}
+
+.listing{
+    
+    padding-top: 15px;
+    margin-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-left: 0px;
+    background-color: #eefcd3;
+
+}
+
+.list-map-options{
+    padding-top: 15px
 }
 
 .list-view p{
@@ -172,11 +208,12 @@ footer a{
 }
 
 .prop-row a{
-    color: black    
+    color: black;
+
 }
 
 hr{
-    border-color: #59886b;   
+    border-color: white;   
     ;
 }
 
@@ -194,9 +231,7 @@ hr{
     width: 45vh;
 }
 
-.hidden{
-    display: none
-}
+
 
 #map-view{
     width: 100%;
