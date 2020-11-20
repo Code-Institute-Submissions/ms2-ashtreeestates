@@ -142,6 +142,9 @@ footer a{
     margin-bottom: 25px;
 }
 
+
+/*CONTACT FORM HOME ***********/
+
 .contact-section{
      text-align: center;
 	height: 85vh;
@@ -155,8 +158,6 @@ footer a{
 	color: #F5F5DC;
 }
 
-/*CONTACT FORM HOME ***********/
-
 .contact-section h2{
     padding-top: 25px;
     padding-bottom: 25px;
@@ -164,11 +165,15 @@ footer a{
 
 .form-group{
     
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 31%; 
     margin-top: 0px;
     padding-top: 25px;
     padding-bottom: 25px;
+    width: 500px
+}
+
+.home-jumbotron{
+    margin: 0 250px
 }
 
 
@@ -231,8 +236,6 @@ hr{
     width: 45vh;
 }
 
-
-
 #map-view{
     width: 100%;
     height: 700px;
@@ -241,20 +244,55 @@ hr{
   
 }
 
-.color-red{
-    background-color: red;
+
+/*PROPERTY LISTING PAGE **********************/
+
+.basics-section{
+    background-color: #eefcd3;
 }
+
+.basics-section h1{
+    padding: 15px 0
+}
+
+.basics-section p{
+    padding-bottom: 15px
+}
+
+.basics-section ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.explore-section{
+    background-color: #7ea04d;;
+}
+
+
 
 .photo-carousel img {
     height: 450px;
     width: 80%;
-    object-fit: cover
+    object-fit: contain;
+    padding-bottom: 15px
+}
+
+.explore-section h2{    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.explore-section h3{
+    padding-bottom: 15px;
+    color: white
 }
 
 #explore-map{
     width: 100%;
     height: 700px;
     margin: 0;
-    padding: 0;    
+    padding: 0; 
   
 }
+

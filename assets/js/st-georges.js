@@ -145,6 +145,11 @@ function clearMarkers() {
   $("#restaurantRadio").click(function () {
       clearMarkers();
     getNearbyPlaces(pos, "restaurant");
+  });  
+
+  $("#shopRadio").click(function () {
+      clearMarkers();
+    getNearbyPlaces(pos, "supermarkets");
   });   
 
    $("#clear-btn").click(function () {

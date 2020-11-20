@@ -214,8 +214,11 @@
    
 
 <div class="contact-section">
-    <h2>Contact Us</h2>
+<h2>Contact Us</h2>
+<div class="jumbotron home-jumbotron">
+    
     <form onsubmit="return sendMail(this);" id="myForm">
+    
     <div class="form-group">
         <label for="inputName">Full Name</label>
         <textarea class="form-control" id="inputName" rows="1" placeholder="Full Name" required></textarea>
@@ -234,7 +237,9 @@
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>    
     <button type="submit" id ="submit" class="btn btn-primary">Submit</button>
+    
     </form>
+    </div>
 </div>
  <!-- Thank you Modal -->
 <div class="modal fade" tabindex="-1" role="dialog" id="emailModal">

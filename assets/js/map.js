@@ -7,7 +7,7 @@ let twoBeds = [{
             lat: 51.4510,
             lng: -2.6073
         }, // St George's Road
-        content: `<h4 class="info-head">St George's Road</h4>
+        content: `<a href="st-georges.html"><h4 class="info-head">St George's Road</h4></a>
         <p><i class="fas fa-bed"></i> 2 &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 525 each pcm </p>`
     },
     {
@@ -15,7 +15,7 @@ let twoBeds = [{
             lat: 51.4642,
             lng: -2.6062
         }, // Abbotsford Road
-        content: `<h4 class="info-head">Abbotsford Road</h4>
+        content: `<a href="abbotsford.html"><h4 class="info-head">Abbotsford Road</h4></a>
         <p><i class="fas fa-bed"></i> 2  &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 606 each pcm </p>`
     },    
 ];
@@ -25,7 +25,7 @@ let threeBeds = [{
             lat: 51.4568,
             lng: -2.6121
         }, // Richmond Hill
-        content: `<h4 class="info-head">Richmond Hill</h4>
+        content: `<a href="richmond.html"><h4 class="info-head">Richmond Hill</h4></a>
         <p><i class="fas fa-bed"></i> 3  &emsp;<i class="fas fa-bath"></i>1 &emsp; <i class="fas fa-pound-sign"></i> 570 each pcm </p>`,        
     },
     {
@@ -33,7 +33,7 @@ let threeBeds = [{
             lat: 51.4665,
             lng: -2.6098
         }, // Ashgrove Road
-        content: `<h4 class="info-head">Ashgrove Road</h4>
+        content: `<a href="ashgrove.html"><h4 class="info-head">Ashgrove Road</h4></a>
         <p><i class="fas fa-bed"></i> 3  &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 565 each pcm </p>`
     },
     {
@@ -41,7 +41,7 @@ let threeBeds = [{
             lat: 51.460,
             lng: -2.6016
         }, // St Michael's Hill Lower
-        content: `<h4 class="info-head">St Michael's Hill Lower</h4>
+        content: `<a href="smhl.html"><h4 class="info-head">St Michael's Hill Lower</h4></a>
         <p><i class="fas fa-bed"></i> 3  &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 580 each pcm </p>`
     },       
 ];
@@ -51,7 +51,7 @@ let fourBeds = [{
             lat: 51.4769,
             lng: -2.5974
         }, // Berkeley Avenue
-        content: `<h4 class="info-head">Berkeley Avenue</h4>
+        content: `<a href="berkeley.html"><h4 class="info-head">Berkeley Avenue</h4></a>
         <p><i class="fas fa-bed"></i> 4  &emsp;<i class="fas fa-bath"></i> 2 &emsp; <i class="fas fa-pound-sign"></i> 525 each pcm </p>`
     },
     {
@@ -59,7 +59,7 @@ let fourBeds = [{
             lat: 51.4537,
             lng: -2.6082
         }, // Rosebury Terrace
-        content: `<h4 class="info-head">Rosebury Terrace</h4>
+        content: `<a href="rosebury.html"><h4 class="info-head">Rosebury Terrace</h4></a>
          <p><i class="fas fa-bed"></i> 4  &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 570 each pcm </p>`
     },
     {
@@ -67,7 +67,7 @@ let fourBeds = [{
             lat: 51.4517,
             lng: -2.6202
         }, // Dowry Road
-        content: `<h4 class="info-head">Dowry Road</h4>
+        content: `<a href="dowry.html"><h4 class="info-head">Dowry Road</h4></a>
         <p><i class="fas fa-bed"></i> 4  &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 555 each pcm </p>`
     },
 ];
@@ -77,7 +77,7 @@ let fiveBeds = [{
             lat: 51.4603,
             lng: -2.6016
         }, // St Michael's Hill Upper
-        content: `<h4 class="info-head">St Michael's Hill Upper</h4>
+        content: `<a href="smhu.html"><h4 class="info-head">St Michael's Hill Upper</h4></a>
         <p><i class="fas fa-bed"></i> 5  &emsp;<i class="fas fa-bath"></i> 2 &emsp; <i class="fas fa-pound-sign"></i> 560 each pcm </p>`
     },
     
@@ -88,7 +88,7 @@ let sixBeds = [{
             lat: 51.4546,
             lng: -2.5927
         }, // High Street
-        content: `<h4 class="info-head">High Street</h4>
+        content: `<a href="high.html"><h4 class="info-head">High Street</h4></a>
         <p><i class="fas fa-bed"></i> 6  &emsp;<i class="fas fa-bath"></i> 2 &emsp; <i class="fas fa-pound-sign"></i> 545 each pcm </p>`
     },
 ];    
@@ -99,7 +99,7 @@ let sevenBeds = [{
             lng: -2.5989,
             "id": "pipe-lane"
         }, // Pipe Lane
-        content: `<h4 class="info-head">Pipe Lane</h4></h4>
+        content: `<a href="pipe.html"><h4 class="info-head">Pipe Lane</h4></h4></a>
         <p><i class="fas fa-bed"></i> 7  &emsp;<i class="fas fa-bath"></i> 3 &emsp; <i class="fas fa-pound-sign"></i> 555 each pcm </p>`
     },           
 ];
