@@ -10,7 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">    
     <title>Ash Tree Estates</title>
-    <link rel="icon" href="assets/images/logo.png" type="image/jpg">
+    <link rel="icon" href="assets/images/logo-black.jpg" type="image/jpg">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript"> (function(){
+      emailjs.init("user_scvEXqvGskRGGpE58Sfoi");   })();</script> 
 
       
 </head>
@@ -51,17 +55,62 @@
 
 <div class="basics-section">
     <h1>St George's Road, Hotwells</h1>
-    <p><i class="fas fa-bed"></i> 2 &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 525 each pcm </p>                            
-        <ul>
+    <p><i class="fas fa-bed"></i> 2 &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 525 each pcm </p> 
+         <ul>
             <li>5 minutes walk from Bristol University down Jacobs Wells Road</li>
             <li>2 very large study rooms (each room on a separate floor) with double beds and sofas</li>
             <li>Fully equipped kitchen including washing machine and tumble dryer</li>
             <li>Shower room</li>
             <li>Electric heating</li>
             <li>Secondary Glazing</li>                   
-        </ul>  
-    <button id="book-btn" class="btn">Book Viewing</button>
-   
+        </ul>      
+        <button id="book-btn" class="btn">Book Viewing</button>
+         <!-- Form Modal -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="formModal">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <form onsubmit="return sendMail(this);" id="myForm">    
+                    <div class="form-group">
+                        <label for="inputName">Full Name</label>
+                        <textarea class="form-control" id="inputName" rows="1" placeholder="Full Name" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email Address</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email Address" required>        
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPhone">Phone Number</label>
+                        <input type="number" class="form-control" id="inputPhone" aria-describedby="emailHelp" placeholder="Phone Number" required>        
+                    </div>    
+                    <div class="form-group">
+                        <label for="projectSummary">Which property?</label>
+                        <textarea class="form-control" id="projectSummary" rows="3" placeholder="St George's, Abbotsford..."></textarea>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>    
+                    <button type="submit" id ="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+             <!-- Thank you Modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="emailModal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-center modal-head">Thank you</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body text-center modal-content">
+                <p>Many thanks for your enquiry, I'll be in touch soon to confirm the viewing!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>        
+</div>    
+
 <div class="photo-section">
     <div class="photo-carousel">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -122,7 +171,7 @@
         </div>
     </div>    
 </div>
-</div>
+
 
 
 <div class="explore-section">
@@ -151,6 +200,7 @@
 </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/st-georges.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
     
     
     <script src="https://unpkg.com/@google/markerclustererplus@5.1.0/dist/markerclustererplus.min.js"></script>

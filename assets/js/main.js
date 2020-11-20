@@ -60,7 +60,7 @@ function sendMail(contactForm){
 // Modal pop up when form submitted
 
 $('#myForm').on('submit', function (email) {
-    $('#emailModal').modal('show');
+    $('.emailModal').modal('show');
     email.preventDefault();
 });
 
