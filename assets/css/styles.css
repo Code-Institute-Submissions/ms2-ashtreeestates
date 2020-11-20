@@ -2,7 +2,7 @@
 
 html,
 body {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
@@ -147,7 +147,7 @@ footer a{
 
 .contact-section{
      text-align: center;
-	height: 85vh;
+	height: 90vh;
 	background-image: url("../images/bristol-cathedral.jpg");
 	background-size: cover;
     -webkit-background-size: cover;
@@ -163,9 +163,8 @@ footer a{
     padding-bottom: 25px;
 }
 
-.form-group{
-    
-    margin-left: 3%; 
+.form-group{    
+    margin-left: 33%; 
     margin-top: 0px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -270,7 +269,10 @@ hr{
     padding-bottom: 12px;
     width: 276px;
     margin-top: 15px;
+}
 
+.form-modal{
+    margin-left: 25px
 }
 
 .explore-section{

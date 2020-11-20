@@ -1,10 +1,11 @@
 $(document).ready(function () {
   const contentString =
-    "<h4 class='info-head'>St George's Road</h4><p><i class='fas fa-bed'></i> 2 &emsp;<i class='fas fa-bath'></i> 1 &emsp; <i class='fas fa-pound-sign'></i> 525 each pcm </p>";
+    "<h4 class='info-head'>Ashgrove Road, Redland</h4><p><i class='fas fa-bed'></i> 3  &emsp;<i class='fas fa-bath'></i> 1 &emsp; <i class='fas fa-pound-sign'></i> 565 each pcm </p>";
 
   let pos;
   let map;
-  const myLatLng = { lat: 51.451, lng: -2.6073 };
+  const myLatLng = { lat: 51.4665,
+            lng: -2.6098};
   let markers = [];
 
   function initMap() {
@@ -20,7 +21,7 @@ $(document).ready(function () {
     const marker = new google.maps.Marker({
       position: myLatLng,
       map,
-      title: "St George's Road",
+      title: "Ashgrove Road",
     });
 
     // Create info window

@@ -123,12 +123,12 @@ function initMap(selectedLocations) {
 
     if (window.screen.width < 768) {
         let myLatlng = {
-            lat: 50.4211456,
-            lng: -4.9904922
+            lat: 51.4545,
+            lng: -2.5879
         };
 
         map = new google.maps.Map(document.getElementById("map-view"), {
-            zoom: 8,
+            zoom: 13,
             center: myLatlng,
             disableDefaultUI: true,
         });
