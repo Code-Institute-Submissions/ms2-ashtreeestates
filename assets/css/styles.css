@@ -286,6 +286,13 @@ hr{
     padding-bottom: 15px
 }
 
+.photo-carousel video {
+    height: 450px;
+    width: 80%;
+    object-fit: contain;
+    padding-bottom: 15px
+}
+
 .explore-section h2{    
     padding-top: 15px;
     padding-bottom: 15px;
