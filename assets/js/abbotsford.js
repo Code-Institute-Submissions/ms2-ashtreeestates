@@ -1,6 +1,6 @@
 $(document).ready(function () {
   const contentString =
-    "<h4 class='info-head'>Abbotsford Road, Cotham</h4><p><i class='fas fa-bed'></i> 2  &emsp;<i class='fas fa-bath'></i> 1 &emsp; <i class='fas fa-pound-sign'></i> 606 each pcm </p>";
+    "<h4 class='info-head'>Abbotsford Road, Cotham</h4><p><i class='fas fa-bed'></i> 2  &emsp;<i class='fas fa-bath'></i> 1 &emsp; <i class='fas fa-pound-sign'></i> 605 each pcm </p>";
 
   let pos;
   let map;

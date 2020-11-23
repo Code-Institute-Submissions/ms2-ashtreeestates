@@ -16,7 +16,7 @@ let twoBeds = [{
             lng: -2.6062
         }, // Abbotsford Road
         content: `<a href="abbotsford.html"><h4 class="info-head">Abbotsford Road</h4></a>
-        <p><i class="fas fa-bed"></i> 2  &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 606 each pcm </p>`
+        <p><i class="fas fa-bed"></i> 2  &emsp;<i class="fas fa-bath"></i> 1 &emsp; <i class="fas fa-pound-sign"></i> 605 each pcm </p>`
     },    
 ];
 
@@ -100,7 +100,7 @@ let sevenBeds = [{
             "id": "pipe-lane"
         }, // Pipe Lane
         content: `<a href="pipe.html"><h4 class="info-head">Pipe Lane</h4></h4></a>
-        <p><i class="fas fa-bed"></i> 7  &emsp;<i class="fas fa-bath"></i> 3 &emsp; <i class="fas fa-pound-sign"></i> 555 each pcm </p>`
+        <p><i class="fas fa-bed"></i> 7  &emsp;<i class="fas fa-bath"></i> 3 &emsp; <i class="fas fa-pound-sign"></i> 565 each pcm </p>`
     },           
 ];
 

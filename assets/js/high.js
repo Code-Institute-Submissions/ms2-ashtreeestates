@@ -1,11 +1,11 @@
 $(document).ready(function () {
   const contentString =
-    "<h4 class='info-head'>Pipe Lane, City Centre</h4><p><i class='fas fa-bed'></i> 7  &emsp;<i class='fas fa-bath'></i> 3 &emsp; <i class='fas fa-pound-sign'></i> 565 each pcm </p>";
+    "<h4 class='info-head'>High Street, City Centre</h4><p><i class='fas fa-bed'></i> 6  &emsp;<i class='fas fa-bath'></i> 2 &emsp; <i class='fas fa-pound-sign'></i> 545 each pcm </p>";
 
   let pos;
   let map;
-  const myLatLng = { lat: 51.4545,
-            lng: -2.5989,};
+  const myLatLng = {lat: 51.4546,
+            lng: -2.5927};
   let markers = [];
 
   function initMap() {
@@ -21,7 +21,7 @@ $(document).ready(function () {
     const marker = new google.maps.Marker({
       position: myLatLng,
       map,
-      title: "Pipe Lane",
+      title: "High Street",
     });
 
     // Create info window
