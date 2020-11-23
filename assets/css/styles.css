@@ -66,6 +66,14 @@ header img{
     margin-bottom: 15px
 }
 
+@media only screen and (min-width: 0px) and (max-width: 550px) {
+  .btn{    
+    
+    width: auto;
+   
+}
+}
+
 .hidden{
     display: none
 }
@@ -139,7 +147,7 @@ footer a{
 
 @media only screen and (min-width: 360px) and (max-width: 550px) {
   .hero-section{
-  height: 95vh;
+  height: 120vh;
     }
 }
 
@@ -216,7 +224,7 @@ footer a{
 
 @media only screen and (min-width: 360px) and (max-width: 550px) {
   .contact-section{
-    height: 110vh
+    height: 120vh
     }
 }
 
@@ -242,7 +250,7 @@ footer a{
 @media only screen and (min-width: 360px) and (max-width: 550px) {
   .form-group{
     margin-left: 1%;
-    width: 350px
+    width: 325px
     }
 }
 
@@ -298,6 +306,15 @@ footer a{
     }
 }
 
+@media only screen and (min-width: 0px) and (max-width: 550px) {
+  .prop-row{
+    height: 95vh;
+    }
+    .prop-row ul{
+        padding-left: 0px
+    }    
+}
+
 .prop-row a{
     color: black;
 }
@@ -318,6 +335,12 @@ hr{
     padding-bottom: 10px;
     height: 30vh;
     width: 45vh;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 550px) {  
+    .list-pic img{
+        height: 40vh
+    }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {
@@ -435,7 +458,7 @@ hr{
 
 @media only screen and (min-width: 360px) and (max-width: 550px) {
   .contact-hero-section{
-    height: 55vh;    
+    height: 60vh;    
     }
 }
 
@@ -454,6 +477,12 @@ hr{
     width: 100%;
     height: 800px;
     object-fit: cover
+}
+
+@media only screen and (min-width: 360px) and (max-width: 550px) {
+  .about-section img{    
+    height: 400px;    
+}
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {
