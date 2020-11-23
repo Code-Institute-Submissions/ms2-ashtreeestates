@@ -17,6 +17,12 @@ header{
     display: inline-block;    
 }
 
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+  header {
+    height: 35vh
+    }
+}
+
 header h1{
     color: white;
     font-size: 500%;
@@ -31,8 +37,14 @@ header img{
 
 .navbar{
     background-color: #7ea04d;
-    padding-left: 40%
-    
+    padding-left: 40%    
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1300px) { 
+  .navbar{    
+    padding-left: 33%;
+    margin: 0
+    }
 }
 
 .nav-item{
@@ -57,6 +69,10 @@ footer, footer a{
     padding: 15px 0
 }
 
+a:hover{
+    text-decoration: none
+}
+
 footer a{
     color: white
 }
@@ -78,6 +94,12 @@ footer a{
   0%   {height: 100vh; width: 100%; padding: 30vh 0}    
   100% {height: 25vh; width: 100%;}}
 
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+  @keyframes example {
+  0%   {height: 100vh; width: 100%; padding: 30vh 0}    
+  100% {height: 35vh; width: 100%;}}
+}
+
 /*HERO SECTION HOME***********/
 
 .hero-section{
@@ -93,6 +115,11 @@ footer a{
 	color: black;
 }
 
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+  .hero-section{
+  height: 90vh;
+}
+}
 .hero-section h1{
     padding-top: 50px
 }
@@ -158,6 +185,12 @@ footer a{
 	color: #F5F5DC;
 }
 
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+  .contact-section{
+    height: 140vh
+    }
+}
+
 .contact-section h2{
     padding-top: 25px;
     padding-bottom: 25px;
@@ -170,6 +203,13 @@ footer a{
     padding-bottom: 25px;
     width: 450px
 }
+
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+  .form-group{
+    margin-left: 17%;
+    }
+}
+
 
 .home-jumbotron{
     margin: 0 250px
@@ -187,8 +227,7 @@ footer a{
     
 }
 
-.listing{
-    
+.listing{    
     padding-top: 15px;
     margin-top: 15px;
     padding-bottom: 0px;
@@ -196,7 +235,6 @@ footer a{
     padding-right: 5px;   
     margin-left: 0px;
     background-color: #eefcd3;
-
 }
 
 .list-map-options{
@@ -211,14 +249,18 @@ footer a{
     height: 30vh;    
 }
 
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+  .prop-row{
+    height: 50vh;
+    }
+}
+
 .prop-row a{
     color: black;
-
 }
 
 hr{
-    border-color: white;   
-    ;
+    border-color: white;      
 }
 
 
@@ -234,6 +276,14 @@ hr{
     height: 30vh;
     width: 45vh;
 }
+
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+  .list-pic img{
+    height: 50vh;
+    width: 65vh
+    }
+}
+
 
 #map-view{
     width: 100%;
@@ -326,6 +376,12 @@ hr{
 	color: black;
 }
 
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+  .contact-hero-section{
+    height: 70vh;    
+    }
+}
+
 .about-section{
     background-color: #eefcd3;
     padding-top: 25px
@@ -335,4 +391,10 @@ hr{
     width: 100%;
     height: 800px;
     object-fit: cover
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+  .about-section img{
+    height: 900px;    
+    }
 }
