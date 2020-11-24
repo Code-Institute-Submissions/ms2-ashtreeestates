@@ -1,10 +1,16 @@
 $(document).ready(function () {
+
+    //highlight buttons when clicked
 	$('button').on('click', function() {
     $('button').removeClass('selected');
     $(this).addClass('selected');
     });
 
+    //hide map view when page loads
+
     $("#map-view").addClass("hidden");
+
+    //buttons to switch between map and list views
 
     $("#map-view-btn").on("click", function(){
         $("#map-view").removeClass("hidden");
@@ -16,6 +22,7 @@ $(document).ready(function () {
         $("#map-view").addClass("hidden")
     })
   
+    //buttons to hide and show the correct properties on both views
 
     $("#2-bed-btn").on('click', function(){
     $(".2-bed-props").removeClass("hidden");
@@ -70,6 +77,8 @@ $(document).ready(function () {
     $(".5-bed-props").addClass("hidden");
     $(".6-bed-props").addClass("hidden")
     });
+
+    //scroll function repeated for sticky navbar
 
 window.onscroll = function() {
     

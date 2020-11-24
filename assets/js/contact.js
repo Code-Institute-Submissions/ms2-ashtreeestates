@@ -25,6 +25,8 @@ $('#myForm').on('submit', function (email) {
     email.preventDefault();
 });
 
+//modal pop up for book viewing button
+
 $('#book-btn').on('click', function () {
     $('#formModal').modal('show');    
 });

@@ -1,3 +1,5 @@
+//list all individual property details for map to read from
+
 let properties = {
 
     stgeorges: {
@@ -71,18 +73,20 @@ let properties = {
 
 $(document).ready(function () {
 
-   let propertyName = $("#property").attr("name")
+let propertyName = $("#property").attr("name")
     
-  const contentString = properties[propertyName].contentString;
+const contentString = properties[propertyName].contentString;    
 
+let pos;
+let map;
+const myLatLng = { 
+    lat: properties[propertyName].lat,
+    lng: properties[propertyName].lng
+    };
     
+//add empty array for which the markers from the getNearbyPlaces function will go into
 
-  let pos;
-  let map;
-  const myLatLng = { lat: properties[propertyName].lat,
-            lng: properties[propertyName].lng
-        };
-  let markers = [];
+let markers = [];
 
   function initMap() {
     // Set the default location
@@ -152,9 +156,11 @@ function clearMarkers() {
         
       });
 
+      //pushes markers into previously mentioned empty array in order to be cleared from map
+
       markers.push(marker);
 
-      /* TODO: Step 4B: Add click listeners to the markers */
+      /* Add click listeners to the markers */
       google.maps.event.addListener(marker, "click", () => {
         let request = {
           placeId: place.place_id,
@@ -202,6 +208,8 @@ function clearMarkers() {
     
   }
 
+  //add event listeners for the buttons
+
   $("#cafeRadio").click(function () {
       clearMarkers();
     getNearbyPlaces(pos, "cafe");
@@ -231,13 +239,4 @@ function clearMarkers() {
   initMap();
 });
 
-$('#book-btn').on('click', function () {
-    $('#formModal').modal('show');    
-});
 
-$('#myForm').on('submit', function (email) {
-$('#emailModal').modal('show');
-    email.preventDefault();
-
-
-});

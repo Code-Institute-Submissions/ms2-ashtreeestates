@@ -1,6 +1,6 @@
 let map;
 
-// Different set of locations
+// Different set of locations grouped into bed sizes
 
 let twoBeds = [{
         coords: {

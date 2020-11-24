@@ -37,13 +37,14 @@ $("#see-less-btn").click(function(){
     $("#see-more-btn").removeClass("hidden")
 });
 
-//Get the button:
+//back to top function:
+
 mybutton = document.getElementById("topBtn");
 
-// When the user scrolls down 200px from the top of the document, show the button
+// When the user scrolls down 300px from the top of the document, show the button. also includes sticky navbar function
 window.onscroll = function() {
     scrollFunction();
-    myFunction()
+    stickyFunction()
 };
 
 function scrollFunction() {
@@ -60,10 +61,12 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+//sticky nav function
+
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
-function myFunction() {
+function stickyFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
