@@ -1,5 +1,7 @@
 /*GENERAL***********/
 
+
+
 html,
 body {
 	font-family: 'Roboto', sans-serif;
@@ -54,8 +56,18 @@ header img{
 
 .navbar{
     background-color: #7ea04d;
-    padding-left: 40%    
+    padding-left: 40%;
+    overflow: hidden;   
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100
+}
+
+
 
 @media only screen and (min-width: 1025px) and (max-width: 1300px) { 
   .navbar{    

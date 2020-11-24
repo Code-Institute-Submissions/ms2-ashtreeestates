@@ -90,18 +90,15 @@ $(document).ready(function () {
     map = new google.maps.Map(document.getElementById("explore-map"), {
       center: pos,
       zoom: 15,
-    });
-    
+    });    
 
     // Set the marker for this property
     const marker = new google.maps.Marker({
       position: myLatLng,
-      map,
-     
+      map,    
       
     });
-
-    
+ 
 
     // Create info window
     const infowindow = new google.maps.InfoWindow({
@@ -116,8 +113,6 @@ $(document).ready(function () {
   let currentInfoWindow;
   
   // Sets the map on all markers in the array.
-
-
 
   function getNearbyPlaces(position, placeType) {
     let request = {
@@ -142,12 +137,10 @@ $(document).ready(function () {
   }
 }
 
-
 // Removes the markers from the map, but keeps them in the array.
 function clearMarkers() {    
   setMapOnAll(null);
 }
-
 
   function createMarkers(places) {
     places.forEach((place) => {
@@ -205,11 +198,9 @@ function clearMarkers() {
           console.log("showDetails failed: " + status);
         }
       }
-    });    
+    });   
     
   }
-
- 
 
   $("#cafeRadio").click(function () {
       clearMarkers();
@@ -247,4 +238,6 @@ $('#book-btn').on('click', function () {
 $('#myForm').on('submit', function (email) {
 $('#emailModal').modal('show');
     email.preventDefault();
+
+
 });

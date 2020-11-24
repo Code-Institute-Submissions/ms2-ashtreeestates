@@ -1,5 +1,7 @@
 //text changer on homepage
 
+$(document).ready(function () {
+
 var areas = ["Clifton","Redland"," the City Centre","Cotham","Hotwells"];
 var currentProperty= 0;
 var property = document.getElementById('property-locations')
@@ -39,7 +41,10 @@ $("#see-less-btn").click(function(){
 mybutton = document.getElementById("topBtn");
 
 // When the user scrolls down 200px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+    scrollFunction();
+    myFunction()
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -54,3 +59,17 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+});
+
