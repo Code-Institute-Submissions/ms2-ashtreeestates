@@ -71,5 +71,7 @@ $(document).ready(function () {
     $(".6-bed-props").addClass("hidden")
     });
 
+
     
 });
+

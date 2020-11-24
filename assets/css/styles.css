@@ -124,6 +124,26 @@ footer a{
   color: white
 }
 
+#topBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #2b580c; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#topBtn:hover {
+  background-color: #7ea04d; 
+}
+
 /*HOME PAGE***********/
 
 #homepage-header{
@@ -244,17 +264,12 @@ footer a{
 	color: #F5F5DC;
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1300px) {
-  .contact-section{
-    height: 140vh
-    }
-}
-
-@media only screen and (min-width: 300px) and (max-width: 550px) {
+@media only screen and (min-width: 0px) and (max-width: 1300px) {
   .contact-section{
     height: 100%
     }
 }
+
 
 .contact-section h2{
     padding-top: 25px;
@@ -275,13 +290,26 @@ footer a{
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 550px) {
+@media only screen and (min-width: 300px) and (max-width: 349px) {
   .form-group{
     margin-left: 1%;
     width: 270px
     }
 }
 
+@media only screen and (min-width: 350px) and (max-width: 550px) {
+  .form-group{
+    margin-left: 10%;
+    width: 270px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .form-group{
+    margin-left: 10%;
+    width: 400px
+    }
+}
 
 .home-jumbotron{
     margin: 0 250px
@@ -293,6 +321,11 @@ footer a{
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .home-jumbotron{
+    margin: 0 100px;
+    }
+}
 
 
 /*PROPERTY LANDING PAGE **************************/
@@ -343,6 +376,12 @@ footer a{
     }    
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+   .prop-row{
+    height: 40vh;
+    }
+}
+
 .prop-row a{
     color: black;
 }
@@ -389,6 +428,8 @@ hr{
 
 
 /*PROPERTY LISTING PAGE **********************/
+
+
 
 .basics-section, .photo-section{
     background-color: #eefcd3;
