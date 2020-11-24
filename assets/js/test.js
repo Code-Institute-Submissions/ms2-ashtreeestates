@@ -1,11 +1,43 @@
+let properties = {
+
+    stgeorges: {
+        lat: 51.4510,
+        lng: -2.6073,        
+        contentString: "<h4>St George's Road, Hotwell</h4><i class='fas fa-bed'></i> 2  &emsp;<i class='fas fa-bath'></i> 1 &emsp; <i class='fas fa-pound-sign'></i> 525 each pcm"
+    },
+
+    abbotsford: { 
+        lat: 51.4642,
+        lng: -2.6062,       
+        contentString: "<h4 class='info-head'>Abbotsford Road, Cotham</h4><p><i class='fas fa-bed'></i> 2  &emsp;<i class='fas fa-bath'></i> 1 &emsp; <i class='fas fa-pound-sign'></i> 605 each pcm </p>"
+        },
+
+
+    berkeley: { 
+        lat: 51.4769,
+        lng: -2.5974,       
+        contentString: "<h4>Berkeley Avenue, Redland</h4><i class='fas fa-bed'></i> 4  &emsp;<i class='fas fa-bath'></i> 2 &emsp; <i class='fas fa-pound-sign'></i> 525 each pcm"
+        },
+
+  
+    
+}
+
+
+
 $(document).ready(function () {
-  const contentString =
-    "<h4 class='info-head'>Abbotsford Road, Cotham</h4><p><i class='fas fa-bed'></i> 2  &emsp;<i class='fas fa-bath'></i> 1 &emsp; <i class='fas fa-pound-sign'></i> 605 each pcm </p>";
+
+   let propertyName = $("#property").attr("name")
+    console.log(propertyName)
+  const contentString = properties[propertyName].contentString;
+
+    
 
   let pos;
   let map;
-  const myLatLng = { lat: 51.4642,
-            lng: -2.6062};
+  const myLatLng = { lat: properties[propertyName].lat,
+            lng: properties[propertyName].lng
+        };
   let markers = [];
 
   function initMap() {
@@ -21,8 +53,11 @@ $(document).ready(function () {
     const marker = new google.maps.Marker({
       position: myLatLng,
       map,
-      title: "Abbotsford Road",
+     
+      
     });
+
+    
 
     // Create info window
     const infowindow = new google.maps.InfoWindow({

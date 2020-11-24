@@ -9,6 +9,10 @@ body {
     
 }
 
+#property{
+    display: none
+}
+
 header{
     background-color: #2b580c;        
     width: 100%;

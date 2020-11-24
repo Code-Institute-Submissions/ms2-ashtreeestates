@@ -1,12 +1,12 @@
 //text changer on homepage
 
-var properties = ["Clifton","Redland"," the City Centre","Cotham","Hotwells"];
+var areas = ["Clifton","Redland"," the City Centre","Cotham","Hotwells"];
 var currentProperty= 0;
 var property = document.getElementById('property-locations')
 function ChangeText(){
-    document.getElementById('property-locations').innerHTML = properties[currentProperty];          
+    document.getElementById('property-locations').innerHTML = areas[currentProperty];          
             
-        if(currentProperty < properties.length -1)
+        if(currentProperty < areas.length -1)
             {        
                 currentProperty++;
             }
