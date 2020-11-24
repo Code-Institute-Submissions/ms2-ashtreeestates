@@ -69,11 +69,10 @@ let properties = {
 }
 
 
-
 $(document).ready(function () {
 
    let propertyName = $("#property").attr("name")
-    console.log(propertyName)
+    
   const contentString = properties[propertyName].contentString;
 
     
