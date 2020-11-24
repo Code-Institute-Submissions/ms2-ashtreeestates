@@ -1,6 +1,5 @@
 //text changer on homepage
 
-$(document).ready(function () {
 
 var areas = ["Clifton","Redland"," the City Centre","Cotham","Hotwells"];
 var currentProperty= 0;
@@ -73,6 +72,4 @@ function stickyFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-});
 
