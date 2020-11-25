@@ -95,7 +95,9 @@ header img{
     width: 260px;
     padding-left: 5px;
     padding-right: 15px;
-
+    z-index: 50;    
+    position: relative;
+  
 }
 
 
@@ -140,7 +142,7 @@ footer a{
 #topBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 30px; /* Place the button at the bottom of the page */
+  bottom: 75px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
@@ -151,6 +153,13 @@ footer a{
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+}
+
+@media only screen and (min-width: 0px) and (max-width: 550px) {
+  #topBtn {  
+  bottom: 150px; /* Place the button at the bottom of the page */
+  }
+   
 }
 
 #topBtn:hover {
