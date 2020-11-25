@@ -77,8 +77,9 @@ $(document).ready(function () {
     $(".5-bed-props").addClass("hidden");
     $(".6-bed-props").addClass("hidden")
     });
-
-    //scroll function repeated for sticky navbar
+    
+});
+//scroll function repeated for sticky navbar
 //back to top function:
 
 mybutton = document.getElementById("topBtn");
@@ -115,8 +116,3 @@ function stickyFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-
-    
-});
-

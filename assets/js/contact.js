@@ -18,12 +18,6 @@ function sendMail(contactForm){
     return false;
 };
 
-// Modal pop up when form submitted
-
-$('#myForm').on('submit', function (email) {
-    $('#emailModal').modal('show');
-    email.preventDefault();
-});
 
 //modal pop up for book viewing button
 
@@ -31,4 +25,11 @@ $('#book-btn').on('click', function () {
     $('#formModal').modal('show');    
 });
 
+
+// Modal pop up when form submitted
+
+$('#myForm').on('submit', function (e) {
+    $('#emailModal').modal('show');
+    e.preventDefault();
+});
 
