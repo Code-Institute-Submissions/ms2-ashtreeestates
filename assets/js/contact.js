@@ -4,7 +4,7 @@ function sendMail(contactForm){
     emailjs.send("adamdelancey", "ash-tree-email", {
         "from_name": contactForm.inputName.value,        
         "from_email": contactForm.inputEmail.value,
-        "from-number": contactForm.inputPhone.value,
+        "from_number": contactForm.inputPhone.value,
         "project_request": contactForm.projectSummary.value
     })
         .then(
@@ -16,7 +16,7 @@ function sendMail(contactForm){
             }
         );
     return false;
-};
+}
 
 
 //modal pop up for book viewing button

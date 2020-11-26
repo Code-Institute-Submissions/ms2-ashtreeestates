@@ -68,12 +68,12 @@ let properties = {
         contentString: "<h4>Pipe Lane, City Centre</h4><i class='fas fa-bed'></i> 7  &emsp;<i class='fas fa-bath'></i> 3 &emsp; <i class='fas fa-pound-sign'></i> 565 each pcm"
         } 
     
-}
+};
 
 
 $(document).ready(function () {
 
-let propertyName = $("#property").attr("name")
+let propertyName = $("#property").attr("name");
     
 const contentString = properties[propertyName].contentString;    
 
@@ -246,7 +246,7 @@ mybutton = document.getElementById("topBtn");
 // When the user scrolls down 300px from the top of the document, show the button. also includes sticky navbar function
 window.onscroll = function() {
     scrollFunction();
-    stickyFunction()
+    stickyFunction();
 };
 
 function scrollFunction() {
@@ -270,7 +270,7 @@ var sticky = navbar.offsetTop;
 
 function stickyFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }

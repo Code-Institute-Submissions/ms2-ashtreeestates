@@ -39,7 +39,7 @@ View the Github repo: [here](https://github.com/adamdelancey/ms2-ashtreeestates)
     5. Find relative information and pictures regarding each property in order to make an informed decision about whether or not to arrange a viewing.
     6. If interested, book a viewing and know that the request has been processed throughout the site.
     7. Easily find the relevant contact information to get in touch with Ash Tree Estates.
-    8. Get the impression that is a professional, reliable and efficient company.
+    8. Get the impression that Ash Tree Estates is a professional, reliable and efficient company.
 
 
 -   #### Frequent User Goals
@@ -244,36 +244,103 @@ The forms on the site used in the modals of "Contact Us" and "Enquire Now" have 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fadamdelancey.github.io%2Fms2-ashtreeestates%2Findex.html)
+    This same result appears across every page of the site.
     <p> <img src="documentation/screenshots/html-checks.jpg">  </p> 
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fadamdelancey.github.io%2Fms1-travelsweden%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) -  there are 2 property issues found when checking the site. However, these are being validated from the Bootstrap CDN link and therefore out of my control.
-    <p> <img src="documentation/screenshots/css-validate.jpg">  </p> 
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fadamdelancey.github.io%2Fms2-ashtreeestates%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) -  
+    There are 2 property issues found when checking the site. However, these are being validated from the Bootstrap CDN link and therefore out of my control.
+    <p> <img src="documentation/screenshots/css-validator.jpg">  </p> 
+-   [JSHint](https://jshint.com/) - 
+    Each of the JS files has been validated using JSHint. The use of 'let' and 'const' has returned a large number of 
+    warnings from the test. It has been used extensively for this website, but has been discussed with my tutor and 
+    considered not to be a issue.
+
+    <p> <img src="documentation/screenshots/jshint.jpg">  </p> 
+
+## Autoprefixer CSS Online
+
+This was used to parse CSS and add vendor prefixes in order to ensure that the CSS styling works properly across all 
+browsers. I have added the below header to my CSS styles sheet in order to show this:
+<p> <img src="documentation/screenshots/css-prefix.jpg">  </p>
 
 ## Lighthouse
 
-<p ><img src="documentation/screenshots/lighthouse-scores.jpg">
+<p >Desktop<img src="documentation/screenshots/lighthouse.jpg">
+Mobile<img src="documentation/screenshots/lighthouse-mobile.jpg"></p>
 
-From Chrome Developer Tools, this Lighthouse score is based on the homepage while being viewed on desktop. I worked hard on ensuring high scores across the site in particular by putting every image through [Tiny PNG](https://tinypng.com/), and improving SEO scores by adding a meta description to each page.
+From Chrome Developer Tools, this Lighthouse score is based on the homepage while being viewed on desktop and mobile. I worked hard on
+ensuring high scores across the site in particular by putting every image through [Tiny PNG](https://tinypng.com/), and improving 
+SEO scores by adding a meta description to each page. The lower 'Best Practices' score is primarily due to the JavaScript
+libraries being used for the site, specifically JQuery.
+
+## EmailJS API
+
+I have tested this manually on every page to ensure that the contact form is being sent through successfully. You can see this 
+here:
+
+<p> <img src="documentation/screenshots/emailjs.jpg">  </p>
+
 
 ## Testing User Stories from User Experience (UX) Section
 
--   #### First Time Visitor Goals
+-   #### First Time Visitor Goals - I want to:
 
-    1. As a First Time Visitor, I want to XXXXXXXXXX
-        - *XXXXXXXXXX*
-    2. As a First Time Visitor, I want to XXXXXXXXXX
-        - *XXXXXXXXXX*
-    3. As a First Time Visitor, I want to XXXXXXXXXX
-        - *XXXXXXXXXX*
-    4. As a First Time Visitor, I want to XXXXXXXXXX
-        - *XXXXXXXXXX*
-    5. As a First Time Visitor, I want to XXXXXXXXXX
-        - *XXXXXXXXXX*
+    1. Quickly understand the service offered by Ash Tree Estates and have a positive experience while browsing the website.
+        - *As the user first enters the homepage, they are greeted with the large animated logo and brand name to show that
+        they have reached the correct site. Then, the first option to select is Properties, as well as a number of properties
+        below to select. This creates a positive experience as the properties, forms and contact options are easy to find.*
+    2. Easily navigate through the website and find any properties that may interest me.
+        - *There is an identical navbar and footer one each page used to navigate throughout the site. There is then the option to 
+        view all of the available properties on the homepage, as well as on the properties landing page.*
+    3. View all of the properties that Ash Tree Estates have to offer, and the basic details about each one such as the number of 
+    bedrooms, bathrooms, area and price.
+        - *Each time a property is listed, including on the homepage, properties listing page map view and list view, I have added
+        the key details of the address, price, and number of bathrooms and bedrooms, as pictured below. These basic pieces of 
+        information can easily persuade a user whether or not to find out more about the property, and helps them to quickly 
+        make decisions. I have used consistent and common icons throughout the site to show this information. *
+        <p ><img src="documentation/screenshots/property-details.jpg"><img src="documentation/screenshots/property-details3.jpg"></p>
+    4. Be able to filter the properties by the number of bedrooms and area to find the ones that I would be interested in looking at.
+        - *On the properties landing page, the user is immediately given the option to select either the list view or map view
+        as well as the number of bedrooms they want to see in their properties. This simple use of buttons allows easy user 
+        interaction, with the chosen button then highlighted, and the relevant properties shown in either view. With both options, 
+        the user can find a short summary of the property and then click through to the relevant listing page.*
+       <p ><img src="documentation/screenshots/filter-buttons.jpg"></p>
+    5. Find relative information and pictures regarding each property in order to make an informed decision about whether or not to arrange a viewing.
+        - *Each property listing page includes the property's key features and selling points, as well as number of pictures 
+        or videos showcasing the property. These features clearly highlight why the property may be appealing to them, then 
+        if they are interested, there is an easy to find 'Book Viewing' button for them to click on.*
+    6. If interested, book a viewing and know that the request has been processed throughout the site.
+     - *The aforementioned 'Book Viewing' button on the property listing page acts as a call to action allowing the user 
+     to make an appointment if they are interested. Once they click on the button, they are first presented with a form option,
+     followed by a second modal showing that the enquiry has been received.*
+     <p><img src="documentation/screenshots/thanks-modal.jpg"></p>
+    7. Easily find the relevant contact information to get in touch with Ash Tree Estates.
+     - *As well as the contact page showing three different options for getting in touch with the company, the key details 
+     are also listed in the footer of each page, and the homepage and property listing pages also include forms that can be 
+     submitted if the user would prefer this option.*
+     <p><img src="documentation/screenshots/getintouch.jpg"></p>
+    8. Get the impression that Ash Tree Estates is a professional, reliable and efficient company.
+     - *To give this information, I have included a range of features to show this. Firstly, within the Downloads 
+     section the user has the option to view the company's Money Protection Certificate, as well as a range of other professional 
+     documents. Secondly, within the contact page, I have included a number of reasons of why to choose Ash Tree Estates, 
+     both used as a selling tool and also to show a sense of professionalism. Thirdly, the layout, imagery and styles across the 
+     site I believe furthers this feeling. Finally, by including a number of contact options and the above modal promising the user 
+     that they will soon hear back from the company, shows a sense of urgency and company quality.*
+    
 
--   #### Frequent User Goals
-    1. As a Frequent User, XXXXXXXXXX
-        - *XXXXXXXXXX*
-    2. As a Frequent User, XXXXXXXXXX
-        - *XXXXXXXXXX*
+
+-   #### Frequent User Goals - I want to:
+    1. Continue to explore properties and check which ones are available.
+        - *With multiple ways of finding the properties, it is easy for the user to explore the properties at their will. 
+        In addition, once certain properties have been let, I can add a note to reflect this, allowing the user to quickly find out 
+        whether or not the property is still available.*
+    2. Download the documents needed to complete my tenancy agreement and pay my deposit.
+        - *I have included a very simple dropdown list where all important documents can be downloaded in a different tab. This means 
+        that the user will stay on the site, and easily be able to find the documents needed to complete the tenancy. This ensures a smooth
+        process of completing any agreements and ultimately paying a deposit.*
+        <p><img src="documentation/screenshots/downloads.jpg"></p>
+    3. Check to see if any properties have been recently added to the site.
+      - *Similarly to point 1, with multiple ways of finding and filtering the properties, it will be very straightforward 
+      for a user to check whether or not any new properties have been added to the list.*
 
 ## Fixed Bugs
 After deployment, I found multiple bugs that needed addressing:

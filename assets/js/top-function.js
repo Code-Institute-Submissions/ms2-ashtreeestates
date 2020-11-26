@@ -6,7 +6,7 @@ mybutton = document.getElementById("topBtn");
 // When the user scrolls down 300px from the top of the document, show the button. also includes sticky navbar function
 window.onscroll = function() {
     scrollFunction();
-    stickyFunction()
+    stickyFunction();
 };
 
 function scrollFunction() {
@@ -30,7 +30,7 @@ var sticky = navbar.offsetTop;
 
 function stickyFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
