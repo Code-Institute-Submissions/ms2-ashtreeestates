@@ -534,7 +534,7 @@ hr{
     padding-top: 25px
 }
 
-@media only screen and (min-width: 300px) and (max-width: 1024) {
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
   .about-section h2{    
     padding-top: 10px
     }
@@ -548,7 +548,7 @@ hr{
 
 @media only screen and (min-width: 765px) and (max-width: 1024px) {
   .about-section img{   
-    height: 600;
+    height: 600px;
   }
 }
 

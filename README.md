@@ -243,8 +243,8 @@ The forms on the site used in the modals of "Contact Us" and "Enquire Now" have 
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fadamdelancey.github.io%2Fms1-travelsweden%2F)
-    <p> <img src="documentation/screenshots/html-validate.jpg">  </p> 
+-   [W3C Markup Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fadamdelancey.github.io%2Fms2-ashtreeestates%2Findex.html)
+    <p> <img src="documentation/screenshots/html-checks.jpg">  </p> 
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fadamdelancey.github.io%2Fms1-travelsweden%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) -  there are 2 property issues found when checking the site. However, these are being validated from the Bootstrap CDN link and therefore out of my control.
     <p> <img src="documentation/screenshots/css-validate.jpg">  </p> 
 
