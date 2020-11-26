@@ -131,7 +131,7 @@ move onto the individual property listing.
 purposely chosen to be on separate pages so that the user can find all of the information and photos relevant to that 
 particular property in one place.
 
-* The Downloads section was chosen to be simply down a dropdown list from the navbar for ease of access, where the formns 
+* The Downloads section was chosen to be simply down a dropdown list from the navbar for ease of access, where the forms 
 will download instantly in a separate tab, meaning that the user stays on the site while they receive the relevant 
 document.
 
@@ -178,7 +178,7 @@ Full wireframes can be accessed here:
 
 -   #### Typography
     -   The Roboto font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the 
-    font isn't being imported into the site correctly. Roboto was chosen after agreemeent with the Ash Tree Estates founder.
+    font isn't being imported into the site correctly. Roboto was chosen after agreement with the Ash Tree Estates founder.
 
 -   #### Imagery
     -   The Home and Contact Pages will have a large hero image showcasing the city of Bristol, where the properties are located. These 
@@ -227,7 +227,7 @@ The forms on the site used in the modals of "Contact Us" and "Enquire Now" have 
 1. [Bootstrap 4.5.2:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website, such as the navbar, carousels and cards features.
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Raleway' font which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Roboto' font which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes. 
 1. [Git](https://git-scm.com/)
@@ -252,7 +252,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [JSHint](https://jshint.com/) - 
     Each of the JS files has been validated using JSHint. The use of 'let' and 'const' has returned a large number of 
     warnings from the test. It has been used extensively for this website, but has been discussed with my tutor and 
-    considered not to be a issue.
+    considered not to be an issue.
 
     <p> <img src="documentation/screenshots/jshint.jpg">  </p> 
 
@@ -345,34 +345,65 @@ here:
 ## Fixed Bugs
 After deployment, I found multiple bugs that needed addressing:
 
-| Bug         | Fix         |
-| ----------- | ----------- |
-| XXXXXXXXXX | XXXXXXXXXX  |
+ 1. Google Maps markers from getNearbyPlaces search overlapping each other
+    - *The first step was to create a clearFilters() function, which would set the setMaponAll function to a null value. However,
+    this initially had no effect as the markers created by the getNearbyPlaces function was individually listing all of the values. 
+    Therefore, I added a created an empty markers array, followed by using the .push method to push all of the markers created by 
+    the getNearbyPlaces into an array. The clearFilters() function then had the desired effect, and I added these to the click 
+    event listeners in order to clear the map before loading the next array of markers.*
+2. The 'sticky' navbar was hiding behind the content when scrolling down the page.
+    - *In order to fix this, I added a z-index of 900 to the 'sticky' class so that the whole navbar was visible over the content at all times*
+3. The dropdown 'Downloads' from the navbar was still hiding behind the content. 
+    - *I thought that this was initially also related to the z-index, but changing the value seemed to have no effect. 
+    By using Google Developer Tools, I noticed that the position: absolute was affecting this. I therefore changed the value 
+    to position: unset, and then it became clear.*
+4. The changeText() function on the homepage that shows the various areas where the company has properties, would always 
+end the loop on 'undefined.'
+    - *I amended the function to read currentProperty < areas.length -1 rather than simply currentProperty < areas.length, which removed 
+    the undefined property and had the desired effect.*
+5. The 'Back to Top' button worked, but was hiding the information in the footer once it reached the bottom of the page.
+    - *To fix this, I simply had to increase the padding-bottom value to ensure that it no longer covered the footer, and 
+    amended the media queries to ensure this had the desired effect on all devices.*
+6. The EmailJS functions were not working properly across all pages.
+    - *Rearranged the order of the script tags to that this code ran first.
 
+
+|Google Maps markers from getNearbyPlaces search overlapping each other 
 
 
 ## Known Outstanding Bugs
 
-| Bug         | Fix         |
-| ----------- | ----------- |
-| XXXXXXXXXX | XXXXXXXXXX  |
-
+1. The navbar dropdown item 'Downloads' moves to the right when clicked on all devices.
+    - *I have looked into many possible reasons for this using Dev Tools, but can't seem to fix it!*
+2. On the homepage, the 'sticky' navbar does not start until you have scrolled past 100% of the screen on initial load.
+    - *This appears to be due to the @keyframes animation when the page initially loads, as when I removed this transition, 
+    the sticky navbar works as it does across the remainder of the site. I am not sure why this transition affects the 
+    JavaScript function, but I have chosen to keep it as it is as I like the opening transition.*
 
  
 ## Further Testing
 
-- XXXXXXXXXX
-- XXXXXXXXXX
-- XXXXXXXXXX
+- Throughout the development process, I used the Chrome Developer Tools, specifically for using the console.log function to test 
+code and also for the various CSS designs, particularly around responsiveness. On especially narrow devices < 300px, some images were 
+larger than the width, however I felt this had no effect on UX.
+- The website has been tested on various desktop browsers such as Google Chrome, Firefox, Safari and Edge, as mentioned above, I used 
+the CSS tool Autoprefixer Online to help with this. 
+- Each link has been tested across the site to ensure everything was linked correctly.
+- Friends and family were also asked for advice particularly on layout and in order to ensure that the site was being tested across 
+various devices. 
 
 
 # Deployment
 
-The site was published in GitPages using the folling steps:
-1. First, all code was written on the IDE Gitpod and was then pushed to GitHub using the 'git push' entry in the terminal, where it is now stored in [my repository](https://github.com/adamdelancey/ms1-travelsweden).
+The site was published in GitPages using the following steps:
+1. First, all code was written on the IDE Gitpod and was then pushed to GitHub using the 'git push' entry in the terminal, where it is now stored in [my repository](https://github.com/adamdelancey/ms2-ashtreeestates).
 2. To push the site live, under the Settings section of the repository I selected, I scrolled down to where it says 'GitHub Pages'.
 3. I then selected 'Master Branch' under Source and then the page automatically refreshed.
-4. This created the URL which can be viewed [here](https://adamdelancey.github.io/ms1-travelsweden/index.html).
+4. This created the URL which can be viewed [here](https://adamdelancey.github.io/ms2-ashtreeestates/index.html).
+5. The site was then found by scrolling back to the "GitHub Pages" section where you can see the following:
+<p><img src="documentation/screenshots/githubpages.jpg"></p>
+
+
 
 To access the code, it can be run locally through a download or cloned.
 
@@ -380,18 +411,18 @@ Initially, I used "git commit" and "git push" for every major change, then at la
 
 # Credits
 
-- All images have been sourced from a combination of [Pexels](https://www.pexels.com/) and [Pixabay](https://pixabay.com/), except the background photo of the Gothenburg page hero section, which is my own photo.
-- The Navbar, Forms, Carousels, Cards and Weather charts on the Tour Pages have been chosen from Bootstrap templates and adapted using CSS.
-- The Timeline on the About Page and  has been taken from the Whiskey Drop CI project and amended using CSS for this project.
-- [Stack Overflow](https://stackoverflow.com/) was used for occasional debugging or issues where I could not initially work out the solution myself.
-- The maps on the Tour pages is from [Google Maps](https://www.google.com/maps) and then using the embed function.
-- The carbon calculator on the About page is from [Carbon Footprint](https://www.carbonfootprint.com/integrate.html) and then I used their integrate features.
+- All professional have been sourced from a combination of [Unsplash](https://unsplash.com/s/photos/bristol) and [Pixabay](https://pixabay.com/).
+- All photos related to the properties have been sourced from Ash Tree Estates.
+- The Navbar, Forms, Carousels and Cards have been chosen from Bootstrap templates and adapted using CSS.
+- Initial instructions for setting up the Google Maps API were taken from the relevant lesson from the [Code Institute](https://codeinstitute.net/).
+- Similarly, setting up the EmailJS API was also taken from the relevant lesson from the [Code Institute](https://codeinstitute.net/).
+- Instructions for setting up the getNearbyPlaces function was taken from the [Google Codelabs Developer lessons](https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js#1)
+- [Stack Overflow](https://stackoverflow.com/) and [W3C Schools](https://www.w3schools.com/) were used for occasional debugging or issues where I could not initially work out the solution myself.
 - Fonts are from [Google Fonts](https://fonts.google.com/) and icons from [Font Awesome](https://fontawesome.com/).
 
 
 # Acknowledgements
 
-- My mentor, Aaron Sinnott, for his help throughout the project.
-- The peer-code-review and user-centric-frontend channels on Slack and their trusty channel leads for both code and design tips.
+- My mentor, Anthony Ngene, for his impressive patience and hugely appreciated help throughout the project.
+- The peer-code-review channel on Slack and their trusty channel leads for both code and design tips.
 - Friends and family for testing the site on their various devices.
-- My girlfriend, for supplying endless tea when I got frustrated!
