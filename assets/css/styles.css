@@ -255,8 +255,6 @@ footer a{
     margin-bottom: 5px;
 }
 
-
-
 /*PROPERTY LISTING SECTION HOME***********/
 
 .property-card-section{
@@ -264,7 +262,7 @@ footer a{
     color: white
 }
 
-.property-card-section h1{
+.property-card-section h2{
     padding: 15px 0;
 }
 

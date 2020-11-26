@@ -169,13 +169,12 @@ Full wireframes can be accessed here:
    
 ### Design
 -   #### Colour Scheme
-    <p><img src="documentation/screenshots/colors.jpg">
-    </p>
+    <p><img src="documentation/screenshots/colors.jpg"></p>
     -   The three main colours used are different shades of green, with the darkest green, #2b580c; used for the header, footer and buttons,
     a lighter green, #7ea04d, chosen as a secondary colour to be used for the navbar and other titles, and finally the lightest green,
-    #eefcd3, which is used a background colour for any longer text elements or areas that include white. These were chosen from 
+    #eefcd3, which is used a background colour for any longer text elements or areas that include white. These were chosen from
     [Color Hunt](https://colorhunt.co/) after agreement with the founder of Ash Tree Estates, as a representation of the color of an ash tree, 
-    with the lighter green colours complimenting the header and therefore appealing to the eye.   
+    with the lighter green colours complimenting the header and therefore appealing to the eye.
 
 -   #### Typography
     -   The Roboto font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the 
@@ -213,6 +212,18 @@ The forms on the site used in the modals of "Contact Us" and "Enquire Now" have 
 
 ## Frameworks, Libraries & Programs Used
 
+
+1. [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview)
+    - The Google Maps API was used on all pages related to the individual properties and the main property listing page. 
+    This was the main API used throughout the site, and was used for both placing markers with information where the properties
+    are located, as well as using the getNearbyPlaces function to show points of interest close to the properties.
+1. [EmailJS](https://www.emailjs.com/)
+    - EmailJS has been used for all forms across the site for receiving any enquiries or viewing requests from the user. A 
+    template email was created in emailJS for the company to receive, but for testing purposes the email address currently used 
+    is the developer's. This will be amended upon website release.
+1. [JQuery](https://jquery.com/)
+    - I have used JQuery for some JS functions, particularly ones that use event listeners such as for the see more/less buttons 
+    on the homepage and the filtering of properties by number of bedrooms.
 1. [Bootstrap 4.5.2:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website, such as the navbar, carousels and cards features.
 1. [Google Fonts:](https://fonts.google.com/)
