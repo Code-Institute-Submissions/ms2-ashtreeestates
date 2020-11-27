@@ -408,7 +408,7 @@ Initially, I used "git commit" and "git push" for every major change, then at la
 
 # Credits
 
-- All professional have been sourced from a combination of [Unsplash](https://unsplash.com/s/photos/bristol) and [Pixabay](https://pixabay.com/).
+- All professional images have been sourced from a combination of [Unsplash](https://unsplash.com/s/photos/bristol) and [Pixabay](https://pixabay.com/).
 - All photos related to the properties have been sourced from Ash Tree Estates.
 - The Navbar, Forms, Carousels and Cards have been chosen from Bootstrap templates and adapted using CSS.
 - Initial instructions for setting up the Google Maps API were taken from the relevant lesson from the [Code Institute](https://codeinstitute.net/).
