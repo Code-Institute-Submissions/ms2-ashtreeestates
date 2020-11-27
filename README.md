@@ -15,6 +15,52 @@ View the project live: [here](https://adamdelancey.github.io/ms2-ashtreeestates/
 
 View the Github repo: [here](https://github.com/adamdelancey/ms2-ashtreeestates)
 
+## Contents
+
+- [UX](#ux)
+    - [Strategy](#strategy)
+        - [Business Objectives](#business-objectives)
+        - [User Stories](#user-stories)
+            - [First Time Visitor Goals](#first-time-visitor-goals)
+            - [Frequent User  Goals](#frequent-user-goals)
+    - [Scope](#scope)
+        - [Current Features](#current-features)
+            - [Navbar](#navbar)
+            - [Back to top Button](#back-to-top-button)
+            - [Home Page](#home-page)
+            - [Property Landing Page](#property-landing-page)
+            - [Property Listing Page](#property-listing-page)
+            - [Contact Page](#contact-page)
+        - [Long-term goals](#long-term-goals)
+    - [Structure](#structure)
+    - [Skeleton](#skeleton)
+        - [Wireframes](#wireframes)
+    - [Surface](#surface)
+        - [Design](#design)
+            - [Colour Scheme](#colour-scheme)
+            - [Typography](#typography)
+            - [Imagery](#imagery)
+            - [Icons](#icons)
+- [Accessibility](#accessibility)
+    - [Alt Tags](#alt-tags)
+    - [Forms](#forms)
+- [Technologies used](#technologies-used)
+    - [Languages Used](#languages-used)
+    - [Frameworks, Libraries & Programs Used](#frameworks-libraries-&-programs-used)
+- [Testing](#testing)
+    - [Validation](#validation)
+    - [Autoprefixer CSS Online](#autoprefixer-css-online)
+    - [Lighthouse](#lighthouse)
+    - [EmailJS API](#emailjs-api)
+    - [Testing User Stories from User Experience Section](#testing-user-stories-from-user-experience-section)
+    - [Fixed Bugs](#fixed-bugs)
+    - [Known Outstanding Bugs](#known-outstanding-bugs)
+    - [Further Testing](#further-testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
+
+
 # UX
 
 ## Strategy
@@ -61,7 +107,7 @@ View the Github repo: [here](https://github.com/adamdelancey/ms2-ashtreeestates)
     * Additionally, the navbar is 'sticky' meaning that it goes down the page as the user scrolls down. This is used across
     all devices and pages.
 
-* 'Back to top' button
+* Back to top button
     * To improve UX and functionality, there is a 'back to top' button that appears once the user has browsed
     300px down the page. Again, this is used on all devices and pages and allows the user to navigate through the website more quickly.
 
@@ -89,7 +135,7 @@ View the Github repo: [here](https://github.com/adamdelancey/ms2-ashtreeestates)
     the user a quick overview of the benefits of that property, and if interested, they have the option of clicking
     either the title or picture to find out more and view the relevant property listing page.
 
-* Property Listing Page (x11)
+* Property Listing Page
     * In addition to the key selling points and price/property summary, the user is presented with a button to 
     arrange a viewing, which similarly they can fill in and a modal will appear thanking them for their interest 
     and saying that the company will get back to them. 
@@ -280,7 +326,7 @@ here:
 <p> <img src="documentation/screenshots/emailjs.jpg">  </p>
 
 
-## Testing User Stories from User Experience (UX) Section
+## Testing User Stories from User Experience Section
 
 -   #### First Time Visitor Goals - I want to:
 
