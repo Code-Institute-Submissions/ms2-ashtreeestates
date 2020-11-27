@@ -73,14 +73,14 @@ View the Github repo: [here](https://github.com/adamdelancey/ms2-ashtreeestates)
     great selection of properties in..." this shows a sense of professionalism and fun and quickly shows off
     the areas covered by the company.
     * The 3 properties that appear on the homepage were chosen by the founder of Ash Tree Estates, who currently wants to
-    prioritise those properties. However, if the user wants to view more properties, there as an option to click the 'see
+    prioritise those properties. However, if the user wants to view more properties, there is an option to click the 'see
     more' button which shows all of the properties, then a 'see less' button to minimise this to the initial 3.
     * There is a contact form at the bottom with a 'submit' button which has a modal thanking the user for his/her
     enquiry. This again acts as a call to action for the user.
 
 * Property Landing Page 
     * Upon loading the page, the user is immediately presented with the option to view all of the properties either
-    as a list or on a map (loaded from the Google API). This allows the user to browse based upon their preference of what 
+    as a list or on a map (loaded from the Google Maps API). This allows the user to browse based upon their preference of what 
     is important to them when choosing a property.
     * Additionally, there is an option to narrow the search by number of bedrooms. It is assumed that users accessing 
     the website will already know their group size, and so there is a quick way to filter the information that is 
@@ -95,7 +95,7 @@ View the Github repo: [here](https://github.com/adamdelancey/ms2-ashtreeestates)
     and saying that the company will get back to them. 
     * A carousel of images/videos showing off the properties. Some are fairly poor quality, but this is out of my control 
     as all videos/images have been supplied to me by the company.
-    * An 'Explore the Area' section, which using Google API's nearby search allows the user to explore local points 
+    * An 'Explore the Area' section, which using Google Maps API's nearby search allows the user to explore local points 
     of interest including the restaurants, cafes, pubs and supermarkets. These factors can play a large role in 
     selecting whether or not a property is suitable, and therefore could potentially speed up the process from viewing a property 
     online to paying their deposit, particularly for international students who may not be able to view the property in person.
@@ -116,7 +116,7 @@ Future improvements to the website may include:
 
 ## Structure
 
-* I made the decision to have the site split into four clear sections - Home, Properties, Downloads & About, 
+* I made the decision to have the site split into four clear sections - Home, Properties, Downloads & Contact, 
 with each page having the same navbar and footer details for consistency and ease of use.
 
 * The Home page is one HTML page and is ordered structurally via importance of content, starting with a large
@@ -131,7 +131,7 @@ move onto the individual property listing.
 purposely chosen to be on separate pages so that the user can find all of the information and photos relevant to that 
 particular property in one place.
 
-* The Downloads section was chosen to be simply down a dropdown list from the navbar for ease of access, where the forms 
+* The Downloads section was chosen to be simply a dropdown list from the navbar for ease of access, where the forms 
 will download instantly in a separate tab, meaning that the user stays on the site while they receive the relevant 
 document.
 
@@ -190,7 +190,7 @@ Full wireframes can be accessed here:
 
 -   #### Icons
     -   Contact icons used in the footer and contact page, as well as in the description for each property have been taken 
-     from [Font Awesome](https://fontawesome.com/)
+     from [Font Awesome](https://fontawesome.com/).
 
 # Accessibility
 
@@ -289,42 +289,42 @@ here:
         they have reached the correct site. Then, the first option to select is Properties, as well as a number of properties
         below to select. This creates a positive experience as the properties, forms and contact options are easy to find.*
     2. Easily navigate through the website and find any properties that may interest me.
-        - *There is an identical navbar and footer one each page used to navigate throughout the site. There is then the option to 
+        - *There is an identical navbar and footer on each page used to navigate throughout the site. There is then the option to 
         view all of the available properties on the homepage, as well as on the properties landing page.*
     3. View all of the properties that Ash Tree Estates have to offer, and the basic details about each one such as the number of 
     bedrooms, bathrooms, area and price.
         - *Each time a property is listed, including on the homepage, properties listing page map view and list view, I have added
         the key details of the address, price, and number of bathrooms and bedrooms, as pictured below. These basic pieces of 
         information can easily persuade a user whether or not to find out more about the property, and helps them to quickly 
-        make decisions. I have used consistent and common icons throughout the site to show this information. *
-        <p ><img src="documentation/screenshots/property-details.jpg"><img src="documentation/screenshots/property-details3.jpg"></p>
+        make decisions. I have used consistent and common icons throughout the site to show this information.*
+        <p><img src="documentation/screenshots/property-details.jpg"><img src="documentation/screenshots/property-details3.jpg"></p>
     4. Be able to filter the properties by the number of bedrooms and area to find the ones that I would be interested in looking at.
         - *On the properties landing page, the user is immediately given the option to select either the list view or map view
         as well as the number of bedrooms they want to see in their properties. This simple use of buttons allows easy user 
         interaction, with the chosen button then highlighted, and the relevant properties shown in either view. With both options, 
         the user can find a short summary of the property and then click through to the relevant listing page.*
-       <p ><img src="documentation/screenshots/filter-buttons.jpg"></p>
+       <p><img src="documentation/screenshots/filter-buttons.jpg"></p>
     5. Find relative information and pictures regarding each property in order to make an informed decision about whether or not to arrange a viewing.
         - *Each property listing page includes the property's key features and selling points, as well as number of pictures 
         or videos showcasing the property. These features clearly highlight why the property may be appealing to them, then 
         if they are interested, there is an easy to find 'Book Viewing' button for them to click on.*
     6. If interested, book a viewing and know that the request has been processed throughout the site.
-     - *The aforementioned 'Book Viewing' button on the property listing page acts as a call to action allowing the user 
-     to make an appointment if they are interested. Once they click on the button, they are first presented with a form option,
-     followed by a second modal showing that the enquiry has been received.*
-     <p><img src="documentation/screenshots/thanks-modal.jpg"></p>
+        - *The aforementioned 'Book Viewing' button on the property listing page acts as a call to action allowing the user 
+        to make an appointment if they are interested. Once they click on the button, they are first presented with a form option,
+        followed by a second modal showing that the enquiry has been received.*
+        <p><img src="documentation/screenshots/thanks-modal.jpg"></p>
     7. Easily find the relevant contact information to get in touch with Ash Tree Estates.
-     - *As well as the contact page showing three different options for getting in touch with the company, the key details 
-     are also listed in the footer of each page, and the homepage and property listing pages also include forms that can be 
-     submitted if the user would prefer this option.*
-     <p><img src="documentation/screenshots/getintouch.jpg"></p>
+        - *As well as the contact page showing three different options for getting in touch with the company, the key details 
+        are also listed in the footer of each page, and the homepage and property listing pages also include forms that can be 
+        submitted if the user would prefer this option.*
+        <p><img src="documentation/screenshots/getintouch.jpg"></p>
     8. Get the impression that Ash Tree Estates is a professional, reliable and efficient company.
-     - *To give this information, I have included a range of features to show this. Firstly, within the Downloads 
-     section the user has the option to view the company's Money Protection Certificate, as well as a range of other professional 
-     documents. Secondly, within the contact page, I have included a number of reasons of why to choose Ash Tree Estates, 
-     both used as a selling tool and also to show a sense of professionalism. Thirdly, the layout, imagery and styles across the 
-     site I believe furthers this feeling. Finally, by including a number of contact options and the above modal promising the user 
-     that they will soon hear back from the company, shows a sense of urgency and company quality.*
+        - *To give this information, I have included a range of features to show this. Firstly, within the Downloads 
+        section the user has the option to view the company's Money Protection Certificate, as well as a range of other professional 
+        documents. Secondly, within the contact page, I have included a number of reasons of why to choose Ash Tree Estates, 
+        both used as a selling tool and also to show a sense of professionalism. Thirdly, the layout, imagery and styles across the 
+        site I believe furthers this feeling. Finally, by including a number of contact options and the above modal promising the user 
+        that they will soon hear back from the company, shows a sense of urgency and company quality.*
     
 
 
@@ -348,7 +348,7 @@ After deployment, I found multiple bugs that needed addressing:
  1. Google Maps markers from getNearbyPlaces search overlapping each other
     - *The first step was to create a clearFilters() function, which would set the setMaponAll function to a null value. However,
     this initially had no effect as the markers created by the getNearbyPlaces function was individually listing all of the values. 
-    Therefore, I added a created an empty markers array, followed by using the .push method to push all of the markers created by 
+    Therefore, I created an empty markers array, followed by using the .push method to push all of the markers created by 
     the getNearbyPlaces into an array. The clearFilters() function then had the desired effect, and I added these to the click 
     event listeners in order to clear the map before loading the next array of markers.*
 2. The 'sticky' navbar was hiding behind the content when scrolling down the page.
@@ -365,10 +365,7 @@ end the loop on 'undefined.'
     - *To fix this, I simply had to increase the padding-bottom value to ensure that it no longer covered the footer, and 
     amended the media queries to ensure this had the desired effect on all devices.*
 6. The EmailJS functions were not working properly across all pages.
-    - *Rearranged the order of the script tags to that this code ran first.
-
-
-|Google Maps markers from getNearbyPlaces search overlapping each other 
+    - *Rearranged the order of the script tags to that this code ran first.*
 
 
 ## Known Outstanding Bugs
@@ -384,7 +381,7 @@ end the loop on 'undefined.'
 ## Further Testing
 
 - Throughout the development process, I used the Chrome Developer Tools, specifically for using the console.log function to test 
-code and also for the various CSS designs, particularly around responsiveness. On especially narrow devices < 300px, some images were 
+JavaScript code and also for the various CSS designs, particularly around responsiveness. On especially narrow devices < 300px, some images were 
 larger than the width, however I felt this had no effect on UX.
 - The website has been tested on various desktop browsers such as Google Chrome, Firefox, Safari and Edge, as mentioned above, I used 
 the CSS tool Autoprefixer Online to help with this. 
